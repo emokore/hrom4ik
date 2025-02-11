@@ -1,3 +1,7 @@
+body{
+            background-color: #D2D2D3;
+}
+
 #plov {
       position: fixed;
     top: 12%;
@@ -19,15 +23,52 @@
 		rotate: 360deg;
 	}
 }
+#lubimi_eda {
+	position: static;
+}
+
+#lubimi_zanyati {
+	position: static;
+}
+
+#lubimi_muzik {
+	position: static;
+}
 
 #lubimi_igri {
-      position: fixed;
+      position: absolute;
     top: 45%;
     left: 25%;
 }
 
 #lubimi_predmeti {
-      position: fixed;
+      position: absolute;
     top: 65%;
     left: 25%;
 }
+
+#vk { 
+	position: fixed ;
+	top: 96%;
+	right: 5%;
+}	
+#steam { 
+	position: fixed ;
+	top: 96%;
+	right: 16%;
+}	
+#faceit { 
+	position: fixed ;
+	top: 96%;
+	right: 20%;
+}	
+#twitch { 
+	position: fixed ;
+	top: 96%;
+	right: 25%;
+}	
+#youtube { 
+	position: fixed ;
+	top: 96%;
+	right: 28%;
+}	
