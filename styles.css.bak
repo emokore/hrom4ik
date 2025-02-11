@@ -1,0 +1,21 @@
+#plov {
+      position: fixed;
+    top: 12%;
+    left: 60%;
+    translate: -50%, -50%;
+    border-radius: 50%;
+    overflow: hidden;
+	 animation: 4s linear 0s infinite alternate rotateInfinite;
+	 transform-origin: center;
+}
+
+@keyframes rotateInfinite {
+	
+	from {
+		rotate: 0deg;
+	}
+	
+	to {
+		rotate: 360deg;
+	}
+}

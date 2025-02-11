@@ -1,0 +1,33 @@
+#plov {
+      position: fixed;
+    top: 12%;
+    left: 60%;
+    translate: -50%, -50%;
+    border-radius: 50%;
+    overflow: hidden;
+	 animation: 4s linear 0s infinite alternate rotateInfinite forwards;
+	 transform-origin: center;
+}
+
+@keyframes rotateInfinite {
+	
+	from {
+		rotate: 0deg;
+	}
+	
+	to {
+		rotate: 360deg;
+	}
+}
+
+#lubimi_igri {
+      position: fixed;
+    top: 45%;
+    left: 25%;
+}
+
+#lubimi_predmeti {
+      position: fixed;
+    top: 65%;
+    left: 25%;
+}
