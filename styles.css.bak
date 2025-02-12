@@ -1,12 +1,34 @@
+body {
+
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	position: relative;
+	font-family: Georgia, serif;
+	color: #ccc;
+		background-image: url("big.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.container {
+	max-width: 1920px;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
+
+}
+
 #plov {
-      position: fixed;
+    position: fixed;
     top: 12%;
     left: 60%;
     translate: -50%, -50%;
     border-radius: 50%;
     overflow: hidden;
-	 animation: 4s linear 0s infinite alternate rotateInfinite;
-	 transform-origin: center;
+	animation: 4s linear 0s infinite alternate rotateInfinite forwards;
+    transform-origin: center;
 }
 
 @keyframes rotateInfinite {
@@ -19,3 +41,130 @@
 		rotate: 360deg;
 	}
 }
+
+.container__grid {
+	display: grid;
+	grid-template-columns: 1fr 0.2fr;
+	gap: 50px;
+}
+
+.container__social {
+	display: flex;
+	flex-direction: column;
+}
+
+#lubimii {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 2%;
+	width: 35%;
+	gap: 20px;
+	flex-grow: 1;
+}
+#lubimi_eda {
+	position: static;
+	border-radius: 10px;
+
+}
+
+#lubimi_zanyati {
+	position: static;
+}
+
+#lubimi_muzik {
+	position: static;
+}
+
+#lubimi_igri {
+      position: static;
+}
+
+#lubimi_predmeti {
+      position: static;
+    top: 65%;
+    left: 25%;
+}
+
+#urls {
+	display: flex;
+	margin-top: 50px;
+	position: fixed;
+	left: 64%;
+	bottom: 94%;
+	width: 90%;
+	
+}
+
+#urls a {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 25px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+
+#vk { 
+	top: 96%;
+	right: 5%;
+	padding-right:8px;
+}	
+
+
+#steam { 
+	top: 96%;
+	right: 16%;
+	padding-right:8px;
+}	
+#faceit { 
+	top: 96%;
+	right: 20%;
+	padding-right:8px;
+}	
+#twitch { 
+	top: 96%;
+	right: 25%;
+	padding-right:8px;
+}	
+#youtube { 
+	top: 96%;
+	right: 30%;
+	padding-right:8px;
+}	
+
+.list {
+	border-radius: 6px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.list:nth-of-type(2n + 1) {
+	background-color: #cccccc;
+}
+
+.list:nth-of-type(3n) {
+  background: green;
+}
+
+.list:nth-of-type(3n + 1) {
+  background: red;
+}
+
+.list:nth-of-type(3n + 2) {
+  background: blue;
+}
+
